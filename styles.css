@@ -16,6 +16,7 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 
 html {
     font-size: 125%;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, li, p, button, label, nav {
@@ -101,6 +102,38 @@ nav a {
     align-items: center;
 }
 
+.standard-ul li {
+    position: relative;
+}
+
+.standard-ul a {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+.standard-ul a:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.standard-ul a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+.standard-ul a:hover {
+
+}
+
 .highlight {
     color: yellow;
 }
@@ -126,7 +159,7 @@ header {
 }
 
 .heading span {
-    color: #FFC947;
+    /* color: #FFC947; */
 }
 
 /* About Section */
@@ -159,10 +192,6 @@ header {
     background-attachment: fixed;
 }
 
-.skill-icons {
-    
-}
-
 .skill-icons ul {
     display: flex;
 justify-content: center;
@@ -172,9 +201,6 @@ padding-bottom: 20px;
 }
 
 .skill-icons li {
-    /* padding-top: 20px;
-    background: #f7f7f7;
-    border-radius: 5px; */
     width: 100px;
     height: 100px;
     text-align: center;
@@ -183,7 +209,14 @@ padding-bottom: 20px;
     min-width: 100px;
     text-align: center;
     color: #fff;
+    transition: transform 300ms;
 }
+
+.skill-icons li:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
 
 .skill-icons i {
     font-size: 3rem;
@@ -264,11 +297,44 @@ padding-bottom: 20px;
     height: 50px;
 }
 
-.project-description a, button {
+.more-info {
+    
+}
+
+.more-info, button {
+    display: inline-block;
+    background-color: transparent;
+    transition: 0.3s;
     color: black;
     border: 2px solid black;
     padding: 4px;
     border-radius: 5px;
+}
+
+.more-info::after, button::after  {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 0%;
+    height: 100%;
+    z-index: -1;
+}
+
+.more-info:hover, .more-info:focus, button:hover, button:focus {
+    position: relative;
+    z-index: 5;
+    color: white;
+}
+
+button:hover, button:focus {
+    border-color: #fff;
+}
+
+.more-info:hover::after, .more-info:focus::after, button:hover::after, button:focus::after {
+    width: 100%;
+    transition: width 0.3s ease;
 }
 
 .project-description h4, .project-description p {
@@ -331,6 +397,16 @@ padding-bottom: 20px;
     margin-right: 5%;
 }
 
+.contact-links li{
+    transition: transform 300ms;
+}
+
+.contact-links li:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+
 form {
     width: 60%;
 }
@@ -375,6 +451,8 @@ button {
     text-transform: uppercase;
     border-radius: 4px;
     padding: 10px 40px;
+    cursor: pointer;
+    background: #fff;
 }
 
 /* Footer Section */
@@ -439,9 +517,13 @@ footer p {
         z-index: 10;
     }
 
+    .line-1.color, .line-2.color, .line-3.color {
+        background: #000;
+    }
+
     .standard-ul {
         position: fixed;
-        background: #000;
+        background: #fff;
         height: 100vh;
         width: 100%;
         flex-direction: column;
@@ -481,13 +563,16 @@ footer p {
         transition: all 0.5s ease 0.5s;
     }
 
-    /* .standard-ul a {
-        align-self: center;
-        font-size: 1.2rem;
-    } */
+    .standard-ul a {
+        color: #000;
+    }
 
     .standard-ul li.fade {
         opacity: 1;
+    }
+
+    .standard-ul a:after {
+        background: #000;
     }
 }
 
@@ -564,6 +649,10 @@ footer p {
 }
 
 @media(max-width: 414px) {
+    .skills-section, header, .contact-section {
+        background-attachment: scroll;
+    }
+
     .project-description h4 {
         /* margin-top: 25px; */
         font-size: calc(2.5rem + 0.1vw);
