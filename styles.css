@@ -85,9 +85,7 @@ img {
 
 nav {
     background-color: #000;
-    position: sticky;
-    top: 0;
-    z-index: 30;
+    height: 10vh;
 }
 
 nav a {
@@ -101,6 +99,10 @@ nav a {
 .nav-container {
     justify-content: space-between;
     padding: 15px 0px;
+}
+
+.highlight {
+    color: yellow;
 }
 
 .logo {
@@ -128,7 +130,7 @@ nav a {
 }
 
 .standard-ul a {
-   margin: 0 auto;
+    margin: 0 auto;
 }
 
 /* header styles */
@@ -145,7 +147,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -199,16 +201,16 @@ padding-bottom: 20px;
 
 .skill-icons li {
     /* padding-top: 20px;
-background: #f7f7f7;
-border-radius: 5px; */
-width: 100px;
-height: 100px;
-text-align: center;
-width: calc((100%/4) - 60px);
-margin: 15px 30px;
-min-width: 100px;
-text-align: center;
-color: #fff;
+    background: #f7f7f7;
+    border-radius: 5px; */
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    width: calc((100%/4) - 60px);
+    margin: 15px 30px;
+    min-width: 100px;
+    text-align: center;
+    color: #fff;
 }
 
 .skill-icons i {
@@ -244,11 +246,11 @@ color: #fff;
 /* Project Section */
 
 .project {
-margin: 50px auto;
-display: flex;
-border-radius: 15px;
-align-items: center;
-flex-wrap: wrap;
+    margin: 50px auto;
+    display: flex;
+    border-radius: 15px;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .project-image {
@@ -298,7 +300,7 @@ flex-wrap: wrap;
 }
 
 .project-description h4, .project-description p {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .project-description p {
@@ -320,6 +322,8 @@ flex-wrap: wrap;
 .recipe-icons li:nth-child(-n+3), .project-icons li:nth-child(-n+3) {
     margin-right: 2%;
 }
+
+
 
 /* Contact Section */
 
@@ -412,10 +416,127 @@ footer p {
     font-size: 1rem;
 }
 
+/* Media Section */
 
-
-@media (max-width: 820px) {
-    .project {
+@media(max-width: 930px) {
+    .project, .even {
         flex-direction: column;
+    }
+
+    .project-description {
+        text-align: center;
+    }
+
+    .project-description, .even .project-image {
+        margin-left: 0px;
+    }
+
+    .easypoll-icons, .recipe-icons, .project-icons {
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+    .project-description h4 {
+        margin-top: 25px;
+    }
+
+    .project-description p {
+        max-width: 730px;
+    }
+}
+
+@media(max-width: 768px) {
+
+    nav {
+        position: relative;
+    }
+
+    .logo, .logo-container {
+        display: none;
+    }
+
+    .line-1, .line-2, .line-3{
+        width: 30px;
+        height: 3px;
+        background: #fff;
+        margin: 5px;
+    }
+
+    .nav-container {
+        position: fixed;
+        background: #000;
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        position: relative;
+        clip-path: circle(100px at 90% -5%);
+        -webkit-clip-path: circle(100px at 90% -5%);
+        transition: all 1s ease-out;
+    }
+
+    .nav-container.open {
+        clip-path: circle(1500px at 90% -5%);
+        -webkit-clip-path: circle(1000px at 90% -5%);
+    }
+
+
+    .standard-ul {
+        flex-direction: column;
+        height: 100vh;
+        /* display: none; */
+    }
+
+    .standard-ul li {
+        flex: 1 1 auto;
+        display: flex;
+        justify-content: flex-end;
+        padding-left: 0px;
+        opacity: 0;
+    }
+
+    .standard-ul li:nth-child(1) {
+        transition: all 0.5s ease 0.2s;
+    }
+
+    .standard-ul li:nth-child(2) {
+        transition: all 0.5s ease 0.3s;
+    }
+
+    .standard-ul li:nth-child(3) {
+        transition: all 0.5s ease 0.4s;
+    }
+
+    .standard-ul li:nth-child(4) {
+        transition: all 0.5s ease 0.5s;
+    }
+
+    .standard-ul a {
+        align-self: center;
+        font-size: 1.2rem;
+    }
+
+    .burger-menu {
+        height: 50px;
+        position: relative;
+        cursor: pointer;
+        align-self: flex-end;
+        right: 7%;
+        top: 2%;
+    }
+
+    .standard-ul li.fade {
+        opacity: 1;
+    }
+}
+
+@media(max-width: 550px) {
+    .skill-icons li {
+        width: calc((100%/4) - 20px);
+        margin: 15px 4px;
+        min-width: 100px;
+    }
+
+    .skill-icons i {
+        font-size: calc(2.5rem + 0.5vw);
     }
 }
