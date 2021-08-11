@@ -1,0 +1,421 @@
+html{line-height:1.15;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,footer,header,nav,section{display:block}h1{font-size:2em;margin:.67em 0}figcaption,figure,main{display:block}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent;-webkit-text-decoration-skip:objects}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}dfn{font-style:italic}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}audio,video{display:inline-block}audio:not([controls]){display:none;height:0}img{border-style:none}svg:not(:root){overflow:hidden}button,input,optgroup,select,textarea{font-family:sans-serif;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,html [type=button],[type=reset],[type=submit]{-webkit-appearance:button}button::-moz-focus-inner,[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{display:inline-block;vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details,menu{display:block}summary{display:list-item}canvas{display:inline-block}template{display:none}[hidden]{display:none}
+
+.clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+
+html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+*, *:before, *:after {box-sizing: inherit}
+
+.sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 125%;
+}
+
+h1, h2, h3, h4, h5, li, p, button, label, nav {
+    font-family: 'Roboto', sans-serif;
+}
+
+nav, p {
+    font-size: 0.9rem;
+}
+
+li {
+    list-style: none;
+}
+
+a, .logo, h1, h2, .heading h3, .skills-section h3 {
+    color: #fff;
+}
+
+a, h3 {
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+h1 {
+    margin: 0;
+    font-size: 4.5rem;
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    text-align: center;
+    padding: 50px 0px;
+    font-size: 2.5rem;
+}
+
+h4 {
+    font-size: 3rem;
+}
+
+h5 {
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* wrapper styles */
+
+.wrapper {
+    max-width: 1200px;
+    width: 90%; 
+    margin: 0 auto;
+}
+
+/* nav styles */
+
+nav {
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 30;
+}
+
+nav a {
+    font-size: 1rem;
+}
+
+.nav-container, .standard-ul {
+    display: flex;
+}
+
+.nav-container {
+    justify-content: space-between;
+    padding: 15px 0px;
+}
+
+.logo {
+    font-size: 2rem;
+}
+
+.logo-container {
+    flex: 1 2 90%;
+}
+
+.standard-ul {
+    flex: 2 1 10%;
+    align-self: center;
+}
+
+.standard-ul li {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 15px;
+}
+
+.standard-ul li:nth-child(1) {
+    padding-left: 0px;
+}
+
+.standard-ul a {
+   margin: 0 auto;
+}
+
+/* header styles */
+
+header {
+    /* background-color: #000; */
+    /* background-image: url(./assets/stars-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 90vh; */
+    background-image: url(./assets/stars-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.heading span {
+    color: #FFC947;
+}
+
+/* About Section */
+
+.about-section {
+    display: flex;
+    margin-top: 120px;
+    justify-content: space-evenly;
+}
+
+.about-heading {
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 65px 40px;
+    margin-right: 2%;
+}
+
+.about-section p {
+    width: 400px;
+}
+
+/* Skill Section */
+
+.skills-section{
+    margin-top: 120px;
+    background-image: url(./assets/stars-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.skill-icons {
+    
+}
+
+.skill-icons ul {
+    display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+padding-bottom: 20px;
+}
+
+.skill-icons li {
+    /* padding-top: 20px;
+background: #f7f7f7;
+border-radius: 5px; */
+width: 100px;
+height: 100px;
+text-align: center;
+width: calc((100%/4) - 60px);
+margin: 15px 30px;
+min-width: 100px;
+text-align: center;
+color: #fff;
+}
+
+.skill-icons i {
+    font-size: 3rem;
+    /* color: #fff; */
+    padding-bottom: 5px;
+}
+
+.jQuery img, .firebase img {
+    margin: 0 auto;
+    padding-bottom: 5px;
+}
+
+.firebase img {
+    padding-bottom: 0px;
+}
+
+.skill-icons ul li:nth-child(7) p {
+    padding-top: 5px;
+}
+
+/* github from nicole wu */
+
+.fa-github::before {
+    content: "\f09b";
+}
+
+/* git */
+.fa-git-alt::before {
+    content: "\f841";
+}
+
+/* Project Section */
+
+.project {
+margin: 50px auto;
+display: flex;
+border-radius: 15px;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.project-image {
+    /* flex: 1 0.5 auto; */
+    flex: 1 1 300px;
+    max-width: 425px;
+    border-radius: 5px;
+}
+
+.project-image img {
+    border-radius: 15px;
+}
+
+.project-description {
+    flex: 1 1 300px;
+    margin-left: 5%;
+}
+
+.easypoll-icons, .easypoll-icons .firebase img {
+    color: black;
+}
+
+.easypoll-icons, .recipe-icons, .project-icons {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.easypoll-icons li:nth-child(3) {
+    margin-right: 2%;
+}
+
+.easypoll-icons i, .recipe-icons i, .project-icons i {
+    font-size: 2rem;
+}
+
+.firebase-project img {
+    width: 50px;
+    height: 50px;
+}
+
+.project-description a, button {
+    color: black;
+    border: 2px solid black;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.project-description h4, .project-description p {
+    margin-bottom: 10px;
+}
+
+.project-description p {
+    font-size: 1rem;
+}
+
+.even {
+    flex-direction: row-reverse;
+}
+
+.even .project-description {
+    margin-left: 0px;
+}
+
+.even .project-image {
+    margin-left: 5%;
+}
+
+.recipe-icons li:nth-child(-n+3), .project-icons li:nth-child(-n+3) {
+    margin-right: 2%;
+}
+
+/* Contact Section */
+
+.contact-section {
+    background-image: url(./assets/stars-2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.contact-section h3, .contact-text, .contact-links {
+    color: #fff;
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 55px;
+}
+
+.contact-text {
+    /* max-width: 620px; */
+}
+
+.contact-text p {
+    margin-bottom: 45px;
+    font-size: 1.3rem;
+}
+
+.contact-links {
+    font-size: 2rem;
+    margin-right: 5%;
+}
+
+form {
+    width: 60%;
+}
+
+.name-container, .email-container, .message-container, .name-email-container {
+    display: flex;
+}
+
+.name-email-container {
+    /* width: 720px; */
+}
+
+.name-container, .email-container, .message-container {
+    flex-direction: column;
+}
+
+.name-container {
+    width: 40%;
+}
+
+.email-container {
+    margin-left: 15px;
+    width: 60%;
+}
+
+.message-container {
+    margin-top: 25px;
+    /* width: 720px; */
+}
+
+input {
+    padding: 10px 20px;
+}
+
+textarea {
+    resize: none;
+    padding: 10px 10px 80px;
+}
+
+button {
+    margin-top: 40px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    padding: 10px 40px;
+}
+
+/* Footer Section */
+
+footer {
+    padding: 10px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+
+
+@media (max-width: 820px) {
+    .project {
+        flex-direction: column;
+    }
+}
