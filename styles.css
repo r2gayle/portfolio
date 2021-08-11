@@ -92,45 +92,17 @@ nav a {
     font-size: 1rem;
 }
 
-.nav-container, .standard-ul {
+.standard-ul {
     display: flex;
-}
-
-.nav-container {
-    justify-content: space-between;
-    padding: 15px 0px;
+    height: 100%;
+    width: 50%;
+    justify-content: space-around;
+    margin-left: auto;
+    align-items: center;
 }
 
 .highlight {
     color: yellow;
-}
-
-.logo {
-    font-size: 2rem;
-}
-
-.logo-container {
-    flex: 1 2 90%;
-}
-
-.standard-ul {
-    flex: 2 1 10%;
-    align-self: center;
-}
-
-.standard-ul li {
-    flex: 1 1 auto;
-    display: flex;
-    justify-content: flex-end;
-    padding-left: 15px;
-}
-
-.standard-ul li:nth-child(1) {
-    padding-left: 0px;
-}
-
-.standard-ul a {
-    margin: 0 auto;
 }
 
 /* header styles */
@@ -451,10 +423,6 @@ footer p {
         position: relative;
     }
 
-    .logo, .logo-container {
-        display: none;
-    }
-
     .line-1, .line-2, .line-3{
         width: 30px;
         height: 3px;
@@ -462,35 +430,38 @@ footer p {
         margin: 5px;
     }
 
-    .nav-container {
+    .burger-menu {
+        position: absolute;
+        cursor: pointer;
+        right: 7%;
+        top: 45%;
+        transform: translate(-5%, -50%);
+        z-index: 10;
+    }
+
+    .standard-ul {
         position: fixed;
         background: #000;
         height: 100vh;
         width: 100%;
         flex-direction: column;
-        position: relative;
-        clip-path: circle(100px at 90% -5%);
-        -webkit-clip-path: circle(100px at 90% -5%);
+        clip-path: circle(100px at 90% -15%);
+        -webkit-clip-path: circle(100px at 90% -15%);
         transition: all 1s ease-out;
+        pointer-events: none;
     }
 
-    .nav-container.open {
-        clip-path: circle(1500px at 90% -5%);
-        -webkit-clip-path: circle(1000px at 90% -5%);
-    }
-
-
-    .standard-ul {
-        flex-direction: column;
-        height: 100vh;
-        /* display: none; */
+    .standard-ul.open {
+        clip-path: circle(1200px at 90% -15%);
+        -webkit-clip-path: circle(1200px at 90% -15%);
+        pointer-events: all;
     }
 
     .standard-ul li {
-        flex: 1 1 auto;
+        /* flex: 1 1 auto;
         display: flex;
         justify-content: flex-end;
-        padding-left: 0px;
+        padding-left: 0px; */
         opacity: 0;
     }
 
@@ -510,22 +481,44 @@ footer p {
         transition: all 0.5s ease 0.5s;
     }
 
-    .standard-ul a {
+    /* .standard-ul a {
         align-self: center;
         font-size: 1.2rem;
-    }
-
-    .burger-menu {
-        height: 50px;
-        position: relative;
-        cursor: pointer;
-        align-self: flex-end;
-        right: 7%;
-        top: 2%;
-    }
+    } */
 
     .standard-ul li.fade {
         opacity: 1;
+    }
+}
+
+@media(max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+    }
+
+    .about-section p {
+        text-align: center;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .contact-links {
+        font-size: 2rem;
+        margin-right: 0px;
+        display: flex;
+        justify-content: flex-start;
+        align-self: flex-start;
+    }
+
+    .contact-links li {
+        margin: 15px 20px 15px 0px;
+    }
+
+    form {
+        width: 90%;
     }
 }
 
@@ -538,5 +531,62 @@ footer p {
 
     .skill-icons i {
         font-size: calc(2.5rem + 0.5vw);
+    }
+
+    h5 {
+        font-size: calc(1.8rem + 0.5vw);
+    }
+
+    .contact-text p {
+        font-size: calc(1rem + 0.5vw);
+    }
+
+    .contact-links {
+        align-self: center;
+        margin-bottom: 15px;
+    }
+
+    .name-email-container {
+        flex-direction: column;
+    }
+
+    .email-container {
+        margin-left: 0px;
+    }
+
+    .name-container {
+        margin-bottom: 25px;
+    }
+    
+    .email-container, .name-container {
+        width: 100%;
+    }
+}
+
+@media(max-width: 414px) {
+    .project-description h4 {
+        /* margin-top: 25px; */
+        font-size: calc(2.5rem + 0.1vw);
+    }
+
+    .project-image {
+        flex: 0;
+    }
+
+    h3 {
+        font-size: calc(2.3rem + 0.5vw);
+        width: 85%;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 320px) {
+
+    h5 {
+        font-size: calc(1.8rem + 0.4vw);
+    }
+
+    .project-description h4 {
+        font-size: calc(2.1rem + 0.1vw);
     }
 }
