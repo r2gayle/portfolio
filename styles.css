@@ -46,11 +46,15 @@ a {
 
 h1 {
     margin: 0;
-    font-size: 4.5rem;
+    font-size: 3.5rem;
 }
 
 h2 {
-    font-size: 3rem;
+    font-size: 4rem;
+}
+
+h1, h2 {
+    text-align: center;
 }
 
 h3 {
@@ -90,7 +94,7 @@ nav {
 }
 
 nav a {
-    font-size: 1rem;
+    font-size: 0.9rem;
 }
 
 .standard-ul {
@@ -156,11 +160,20 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    /* position: relative; */
 }
 
 .heading span {
     /* color: #FFC947; */
 }
+
+/* .scroll-down {
+    font-size: 3rem;
+display: flex;
+justify-content: center;
+position: relative;
+top: 200px;
+} */
 
 /* About Section */
 
@@ -254,12 +267,16 @@ padding-bottom: 20px;
     margin: 50px auto;
     display: flex;
     border-radius: 15px;
+    border-radius: 0.3125rem;
+    box-shadow: -10px 15px 15px 5px rgba(0, 0, 0, 0.15);
+    transition: all 150ms ease-in-out;
+    overflow: hidden;
     align-items: center;
     flex-wrap: wrap;
+    padding: 30px;
 }
 
 .project-image {
-    /* flex: 1 0.5 auto; */
     flex: 1 1 300px;
     max-width: 425px;
     border-radius: 5px;
@@ -272,6 +289,10 @@ padding-bottom: 20px;
 .project-description {
     flex: 1 1 300px;
     margin-left: 5%;
+}
+
+.project-list {
+   
 }
 
 .easypoll-icons, .easypoll-icons .firebase img {
@@ -539,6 +560,21 @@ footer p {
         pointer-events: all;
     }
 
+    /* .line-1.line-1-active {
+        transform: rotate(45deg) translate(-1px, 0.9px);
+    transition: 0.4s;
+    }
+
+    .line-2.line-2-active {
+            transform: rotate(-45deg) translate(6px, -7px);
+    transition: 0.4s;
+    }
+
+    .line-3.line-3-active {
+    opacity: 0;
+    transition: 0.4s;
+    } */
+
     .standard-ul li {
         /* flex: 1 1 auto;
         display: flex;
@@ -574,10 +610,8 @@ footer p {
     .standard-ul a:after {
         background: #000;
     }
-}
 
-@media(max-width: 768px) {
-    .about-section {
+    /* .about-section {
         flex-direction: column;
     }
 
@@ -605,7 +639,51 @@ footer p {
     form {
         width: 90%;
     }
+
+    /* test for card  */
+
+    /* h4 {
+        font-size: 1.5rem;
+    }
+
+    .project-description p {
+        font-size: 0.8rem;
+        width: 400px;
+        margin: 0 auto;
+        text-align: left;
+        max-width: 699px;
+    }
+
+    .project-description {
+        text-align: left;
+    }
+
+    .project-image img {
+        border-radius: 0px;
+    }
+
+    .project-image {
+        flex: 0;
+        }
+
+    .project {
+    padding: 0px;
+    }
+
+    .project-list {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .project-list li {
+        max-width: 425px;
+        align-self: center;
+        width: calc(100% - 45px);
+        margin: 0 auto;
+        min-width: 100px;
+    }  */
 }
+
 
 @media(max-width: 550px) {
     .skill-icons li {
