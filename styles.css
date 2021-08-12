@@ -115,6 +115,7 @@ nav a {
     justify-content: space-around;
     margin-left: auto;
     align-items: center;
+    z-index: 10;
 }
 
 .standard-ul li {
@@ -186,6 +187,7 @@ header {
     text-align: center;
     left: 50%;
     top: 85%;
+    z-index: 1;
 }
 
 /* About Section */
@@ -420,6 +422,7 @@ button:hover, button:focus {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    position: relative;
 }
 
 .contact-section h3, .contact-text, .contact-links {
@@ -504,6 +507,17 @@ button {
     background: #fff;
 }
 
+.scroll-up {
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    font-size: 4rem;
+    text-align: right;
+    left: 80%;
+    top: 70%;
+    z-index: 1;
+}
+
 /* Footer Section */
 
 footer {
@@ -582,7 +596,7 @@ footer p {
         right: 7%;
         top: 45%;
         transform: translate(-5%, -50%);
-        z-index: 10;
+        z-index: 20;
     }
 
     .line-1.color, .line-2.color, .line-3.color {
@@ -735,7 +749,8 @@ footer p {
     }
 
     .about-section p {
-        width: 360px;
+        font-size: calc(0.9rem + 0.1vw);
+        margin-left: 0px;
     }
 
     .skills-section, header, .contact-section {
@@ -764,7 +779,7 @@ footer p {
     }
 
     h3 {
-        font-size: calc(2.3rem + 0.5vw);
+        font-size: calc(2.1rem + 0.1vw);
         width: 85%;
         margin: 0 auto;
     }

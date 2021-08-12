@@ -1,6 +1,3 @@
-AOS.init({
-    duration: 800
-});
 
 console.log('hi');
 
