@@ -564,12 +564,10 @@ footer p {
         transform: rotate(45deg) translate(-1px, 0.9px);
     transition: 0.4s;
     }
-
     .line-2.line-2-active {
             transform: rotate(-45deg) translate(6px, -7px);
     transition: 0.4s;
     }
-
     .line-3.line-3-active {
     opacity: 0;
     transition: 0.4s;
@@ -611,14 +609,12 @@ footer p {
         background: #000;
     }
 
-    /* .about-section {
+    .about-section {
         flex-direction: column;
     }
-
     .about-section p {
         text-align: center;
     }
-
     .contact {
         flex-direction: column;
         align-items: center;
@@ -631,57 +627,12 @@ footer p {
         justify-content: flex-start;
         align-self: flex-start;
     }
-
     .contact-links li {
         margin: 15px 20px 15px 0px;
     }
-
     form {
         width: 90%;
     }
-
-    /* test for card  */
-
-    /* h4 {
-        font-size: 1.5rem;
-    }
-
-    .project-description p {
-        font-size: 0.8rem;
-        width: 400px;
-        margin: 0 auto;
-        text-align: left;
-        max-width: 699px;
-    }
-
-    .project-description {
-        text-align: left;
-    }
-
-    .project-image img {
-        border-radius: 0px;
-    }
-
-    .project-image {
-        flex: 0;
-        }
-
-    .project {
-    padding: 0px;
-    }
-
-    .project-list {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .project-list li {
-        max-width: 425px;
-        align-self: center;
-        width: calc(100% - 45px);
-        margin: 0 auto;
-        min-width: 100px;
-    }  */
 }
 
 
@@ -727,17 +678,42 @@ footer p {
 }
 
 @media(max-width: 414px) {
+    h1 {
+        margin: 0 0 20px 0;
+        font-size: calc(2.1rem + 0.9vw);
+    }
+
+    h2 {
+        font-size: calc(2rem + 1vw);
+    }
+
+    .about-section p {
+        width: 360px;
+    }
+
     .skills-section, header, .contact-section {
         background-attachment: scroll;
     }
 
+    .project {
+        box-shadow: -4px 11px 12px 0px rgba(0, 0, 0, 0.15);
+    }
+
     .project-description h4 {
         /* margin-top: 25px; */
-        font-size: calc(2.5rem + 0.1vw);
+        font-size: calc(1.5rem + 0.1vw);
+    }
+
+    .project-description p {
+        font-size: calc(0.9rem + 0.2vw);
     }
 
     .project-image {
         flex: 0;
+    }
+
+    .easypoll-icons i, .recipe-icons i, .project-icons i {
+        font-size: 1.7rem;
     }
 
     h3 {
@@ -757,3 +733,4 @@ footer p {
         font-size: calc(2.1rem + 0.1vw);
     }
 }
+
