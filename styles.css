@@ -167,13 +167,15 @@ header {
     /* color: #FFC947; */
 }
 
-/* .scroll-down {
-    font-size: 3rem;
-display: flex;
-justify-content: center;
-position: relative;
-top: 200px;
-} */
+.scroll-down {
+    position: absolute;
+    display: inline-block;
+    font-size: 4rem;
+    transform: translateX(-50%);
+    text-align: center;
+    left: 50%;
+    top: 85%;
+}
 
 /* About Section */
 
@@ -548,15 +550,15 @@ footer p {
         height: 100vh;
         width: 100%;
         flex-direction: column;
-        clip-path: circle(100px at 90% -15%);
-        -webkit-clip-path: circle(100px at 90% -15%);
+        clip-path: circle(100px at 110% -15%);
+        -webkit-clip-path: circle(100px at 110% -15%);
         transition: all 1s ease-out;
         pointer-events: none;
     }
 
     .standard-ul.open {
-        clip-path: circle(1200px at 90% -15%);
-        -webkit-clip-path: circle(1200px at 90% -15%);
+        clip-path: circle(1200px at 110% -15%);
+        -webkit-clip-path: circle(1200px at 110% -15%);
         pointer-events: all;
     }
 

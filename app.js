@@ -1,3 +1,7 @@
+AOS.init({
+    duration: 800
+});
+
 console.log('hi');
 
 const burger = document.querySelector('.burger-menu')
