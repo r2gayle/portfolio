@@ -171,6 +171,8 @@ header {
     z-index: 1;
 }
 
+
+/* referenced animation from kornthip.me */
 .scroll-up {
     animation: bounce 2s ease-in-out infinite;
 }
