@@ -63,6 +63,17 @@ h3 {
     font-size: 2.5rem;
 }
 
+/* h3:hover, h3:focus {
+    font-weight: 600;
+    text-shadow: 5px 5px 0px #eb452b,
+                    7px 7px 0px #efa032,
+                    9px 9px 0px #46b59b,
+                    11px 11px 0px #017e7f,
+                    13px 13px 0px #052939,
+                    15px 15px 0px #c11a2b
+                    ;
+} */
+
 h4 {
     font-size: 3rem;
 }
@@ -180,20 +191,39 @@ header {
 /* About Section */
 
 .about-section {
-    display: flex;
-    margin-top: 120px;
-    justify-content: space-evenly;
+    margin-top: 85px;
 }
 
-.about-heading {
+.about-info {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* .about-heading {
     border: 5px solid black;
     border-radius: 10px;
     padding: 65px 40px;
     margin-right: 2%;
+} */
+
+.my-photo {
+    padding: 25px 25px;
+    margin-right: 2%;
+    box-shadow: -10px 15px 15px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.my-photo img {
+    border-radius: 10px;
 }
 
 .about-section p {
-    width: 400px;
+    max-width: 500px;
+    align-self: center;
+    font-size: 1.1rem;
+line-height: 1.3;
+margin-left: 2%;
 }
 
 /* Skill Section */
@@ -318,10 +348,6 @@ padding-bottom: 20px;
 .firebase-project img {
     width: 50px;
     height: 50px;
-}
-
-.more-info {
-    
 }
 
 .more-info, button {
@@ -490,6 +516,25 @@ footer p {
 }
 
 /* Media Section */
+
+@media(max-width: 1080px) {
+    .about-info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-photo {
+        max-width: 500px;
+    }
+
+    .about-section p {
+        margin-top: 65px;
+    }
+
+    .my-photo {
+        margin-right: 0px;
+    }
+}
 
 @media(max-width: 930px) {
     .project, .even {
