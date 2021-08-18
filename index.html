@@ -3,25 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Dev icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
+    <!-- Font Awesome icons -->
     <script src="https://kit.fontawesome.com/b9c5387262.js" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.12.0/devicon.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet"> 
-    <!-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> -->
-    <link rel="stylesheet" href="styles.css">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Yellowtail&display=swap" rel="stylesheet">
+    <!-- style sheet -->
+    <link rel="stylesheet" href="./styles.css">
     <title>Richard Gayle</title>
 </head>
 <body>
-    <!-- Nav bar -->
-    <nav>
+
+    <!-- Nav -->
+    <nav class="nav-container">
+        <div class="logo">
+            <a href="#nav">RG</a>
+        </div>
         <div class="burger-menu">
-            <div class="line-1 line-1-active "></div>
+            <div class="line-1 line-1-active"></div>
             <div class="line-2 line-2-active"></div>
             <div class="line-3 line-3-active"></div>
         </div>
@@ -32,216 +34,221 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
-
-
-    <!-- header -->
+    
+    <!-- Header -->
     <header id="home">
         <div class="wrapper">
             <div class="heading">
-                <h1>Richard <span>Gayle</span></h1> 
-                <h2><span>Front-End</span> Developer</h2>  
+                <h1>Richard Gayle</h1>
+                <h2>Front-End Developer</h2>
             </div>
-            <div class="scroll-down">
-                <a href="#about">
-                    <i class="fas fa-sort-down" aria-hidden="true"></i>
-                </a>
-            </div>
+            <!-- Credit to Iftikhar Rasha for arrow effect https://codepen.io/iftikharrasha/pen/eYJKGGa -->
+            <a href="#about" class="scroll-down">
+                <span></span>
+                <span></span>
+            </a>
         </div>
     </header>
 
-    <main>
-        <section class="wrapper about-section" id="about">
-            <h3>About Me</h3>
-            <div class="about-info">
-                <div class="about-photo">
-                    <div class="my-photo">
-                        <img src="./assets/myphoto.jpeg" alt="a black and white picture of richard gayle with a boat in the background">
+    <!-- Main -->
+
+    <main> 
+        <section class="about-section" id="about">
+            <div class="wrapper">
+                <h3>About Me</h3>
+                    <div class="about-text">
+                        <h5>I'm a front-end developer and avid music lover based in Toronto, Canada.</h5>
+                        <p>Before my journey into web development I was in the finance industry. The majority of my roles were client serving and it allowed me the opportunity to help them in difficult situations through a combination of logical analysis and creative problem solving. As a developer I've brought that same mindset and enjoy creating accessible and intuitive web applications to give users the best experience. In my free time, I’m always on the hunt for new restaurants or looking for new artist to listen to!</p>
+                        <a class="resume" href="">Resume</a>
                     </div>
-                </div>
-                    <p>I'm a front-end developer and avid music lover based in Toronto, Canada. I have a background in client serving roles within the finance industry which allowed me the opportunity to help clients in difficult situations and provide them with solutions and tools that will benefit them today and in the future. As a developer, I enjoy creating accessible and intuitive web applications to give users the best experience. In my free time, I’m always on the hunt for a new restaurant to try out with friends and finding new artist to listen to!</p>
             </div>
         </section>
 
-        <!-- Skills Section -->
+    <!-- Skills Icons List -->
+
         <section class="skills-section" id="skills">
             <div class="skills-container wrapper">
                 <h3>Skills</h3>
-                <div class="skill-icons">
-                    <ul>
-                        <li>
-                            <i class="fab fa-html5" aria-hidden="true"></i>
-                            <p>HTML5</p>
-                        </li>
-                        <li>
-                            <i class="fab fa-css3-alt" aria-hidden="true"
-                            ></i>
-                            <p>CSS3</p>
-                        </li>
-                        <li>
-                            <i class="fab fa-js-square"
-                            aria-hidden="true"></i>
-                            <p>JavaScript</p>
-                        </li>
-                        <li>
-                            <i class="fab fa-react"
-                            aria-hidden="true"></i>
-                            <p>React</p>
-                        </li>
-                        <li>
-                            <i class="fab fa-sass"
-                            aria-hidden="true"></i>
-                            <p>Sass</p>
-                        </li>
-                        <li>
-                            <div class="jQuery">
-                                <img src="./assets/jQuery.png" alt="">
-                            </div>
-                            <p>jQuery</p>
-                        </li>
-                        <li>
-                            <i class="devicon-firebase-plain"></i>
-                            <p>Firebase</p>
-                        </li>
-                        <li>
-                            <i class="fas fa-cogs"
-                            aria-hidden="true"></i>
-                            <p>Rest APIs</p>
-                        </li>
-                        <li>
-                            <i class="fab fa-github"
-                            aria-hidden="true"></i>
-                            <p>GitHub</p>
-                        </li>
-                        <li>
-                            <i class="fab fa-git-alt"
-                            aria-hidden="true"></i>
-                            <p>Git</p>
-                        </li>
-                        <li>
-                            <i class="fas fa-mobile-alt"
-                            aria-hidden="true"></i>
-                            <p>Responsive</p>
-                        </li>
-                        <li>
-                            <i class="fas fa-universal-access"
-                            aria-hidden="true"></i>
-                            <p>Accessibility</p>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="skill-icons">
+                    <li>
+                        <i class="fab fa-html5" aria-hidden="true"></i>
+                        <p>HTML5</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-css3-alt" aria-hidden="true"
+                        ></i>
+                        <p>CSS3</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-js-square"
+                        aria-hidden="true"></i>
+                        <p>JavaScript</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-react"
+                        aria-hidden="true"></i>
+                        <p>React</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-sass"
+                        aria-hidden="true"></i>
+                        <p>SASS</p>
+                    </li>
+                    <li>
+                        <i class="devicon-jquery-plain"></i>
+                        <p>jQuery</p>
+                    </li>
+                    <li>
+                        <i class="devicon-firebase-plain"></i>
+                        <p>Firebase</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-cogs"
+                        aria-hidden="true"></i>
+                        <p>Rest APIs</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-github"
+                        aria-hidden="true"></i>
+                        <p>GitHub</p>
+                    </li>
+                    <li>
+                        <i class="fab fa-git-alt"
+                        aria-hidden="true"></i>
+                        <p>Git</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-mobile-alt"
+                        aria-hidden="true"></i>
+                        <p>Responsive</p>
+                    </li>
+                    <li>
+                        <i class="fas fa-universal-access"
+                        aria-hidden="true"></i>
+                        <p>Accessibility</p>
+                    </li>
+                </ul>
             </div>
         </section>
 
         <!-- Project Section -->
-        <section  class="wrapper projects-section" id="projects">
-            <h3>My Projects</h3>
 
-            <ul class="project-list">
-                <li class="aos-init aos-animate" data-aos="fade-right">
-                    <div class="project">
-                        <div class="project-image">
-                            <img src="./assets/easypoll.png" alt="">
+        <section class="project-section" id="projects">
+            <div class="project-container wrapper">
+                <div class="project-heading">
+                    <h3>Projects</h3>
+                </div>
+                <ul class="project-list">
+                    <li class="project">
+                        <div class="project-image-container">
+                            <a href="">
+                                <img class="project-img" src="./assets/easypoll.png" alt="An image of the easypoll web application, created by Richard Gayle, Hongjian Huang and Sherry Truong">
+                            </a>
                         </div>
-                        <div class="project-description">
-                            <h4>EasyPoll</h4>                      
-                            <p>Do you need to get a quick vote like deciding on a name for the new family pet? Try this react app. It allows user to customize and share the poll they've created and get a real-time update of the results.</p>
-                            <ul class="easypoll-icons">
-                                <li>
-                                    <i class="fab fa-react"
-                                    aria-hidden="true"></i>
-                                </li>
-                                <li>
-                                    <i class="devicon-firebase-plain"></i>
-                                </li>
-                                <li>
-                                    <i class="fab fa-css3-alt" aria-hidden="true"></i>
-                                </li>
-                                <li>
-                                    <i class="fab fa-html5" aria-hidden="true"></i>
-                                </li>
-                            </ul>
-                            <div class="live-git">
+                        <div class="project-content-container">
+                            <div class="project-content">
+                                <h4>EasyPoll</h4>
+                                <ul class="tools">
+                                    <li>React</li>
+                                    <li>Firebase</li>
+                                    <li>CSS3</li>
+                                </ul>
+                                <p class="project-description">
+                                    Do you need to get a quick vote like deciding on a name for the new family pet? Try this react app. It allows users to customize and share the poll they've created and get a real-time update of the results. Created by Hongjian Huang, Sherry Truong and Richard Gayle.
+                                </p>
+                            </div>
+                            <div class="button-links">
                                 <a class="more-info" href="https://theeasypoll.netlify.app/" target="_blank">Live</a>
                                 <a class="more-info" href="https://github.com/HongjianHuang/Project_4_voting_booth" target="_blank">GitHub</a>
-                            </div>                       
+                            </div>
                         </div>
-                    </div>
-                </li>
-
-                <li class="aos-init aos-animate" data-aos="fade-left">
-                    <div class="project even">
-                        <div class="project-image">
-                            <img src="./assets/recipehunter.png" alt="">
+                    </li>
+    
+                    <li class="project">
+                        <div class="project-image-container">
+                            <a href="">
+                                <img src="./assets/recipe.png" alt="An image of the recipe hunter web application, created by Richard Gayle">
+                            </a>
                         </div>
-                        <div class="project-description">
-                            <h4>Recipe Hunter</h4>                      
-                            <p>If you love to cook or you're looking to try something new, give this react app a go. It provides users with recipes based on the ingredients they've chosen and includes an option to filter recipes based on cuisine types from all around the world.</p>
-                            <ul class="recipe-icons">
-                                <li>
-                                    <i class="fab fa-react"
-                                    aria-hidden="true"></i>
-                                </li>
-                                <li>
-                                    <i class="fas fa-cogs"
-                                    aria-hidden="true"></i>
-                                </li>
-                                <li>
-                                    <i class="fab fa-css3-alt" aria-hidden="true"></i>
-                                </li>
-                                <li>
-                                    <i class="fab fa-html5" aria-hidden="true"></i>
-                                </li>
-                            </ul>                       
-                            <div class="live-git">
-                                <a class="more-info" href="https://therecipehunter.netlify.app/" target="_blank">Live</a>
-                                <a class="more-info" href="https://github.com/r2gayle/richard-gayle-project-3" target="_blank">GitHub</a>
-                            </div>  
+                        <div class="project-content-container">
+                            <div class="project-content">
+                                <h4>Recipe Hunter</h4>
+                                <ul class="tools">
+                                    <li>React</li>
+                                    <li>Rest API</li>
+                                    <li>CSS3</li>
+                                </ul>
+                                <p class="project-description">
+                                    If you love to cook or you're looking to try something new, give this react app a go. It provides users with recipes based on the ingredients they've chosen and includes an option to filter through recipes based on cuisine types from all around the world.
+                                </p>
+                            </div>
+                            <div class="button-links">
+                                <a class="more-info" href="https://theeasypoll.netlify.app/" target="_blank">Live</a>
+                                <a class="more-info" href="https://github.com/HongjianHuang/Project_4_voting_booth" target="_blank">GitHub</a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-
-                <li class="aos-init aos-animate" data-aos="fade-right">
-                    <div class="project">
-                        <div class="project-image">
-                            <img src="./assets/movienight.png" alt="">
+                    </li>
+    
+                    <li class="project">
+                        <div class="project-image-container">
+                            <a href="">
+                                <img src="./assets/movie.png" alt="An image of the movie night web application created by Richard Gayle and Huong Mai">
+                            </a>
                         </div>
-                        <div class="project-description">
-                            <h4>Movie Night</h4>                      
-                            <p>For all the movie lovers. Pick any genre and the app will provide you a list of movies to choose from and if you have any trouble deciding, this app will also display the top three rated movies for each genre.</p>
-                            <ul class="project-icons">
-                                <li>
-                                    <i class="fab fa-js-square"
-                                    aria-hidden="true"></i>
-                                </li>
-                                <li>
-                                    <i class="fab fa-sass"
-                                    aria-hidden="true"></i>
-                                </li>
-                                <li>
-                                    <i class="fab fa-css3-alt" aria-hidden="true"></i>
-                                </li>
-                                <li>
-                                    <i class="fab fa-html5" aria-hidden="true"></i>
-                                </li>
-                            </ul>                       
-                            <div class="live-git">
-                                <a class="more-info" href="https://watchnights.netlify.app/" target="_blank">Live</a>
-                                <a class="more-info" href="https://github.com/huongMaiRichardGayleProject2/Movies-Night" target="_blank">GitHub</a>
-                            </div>  
+                        <div class="project-content-container">
+                            <div class="project-content">
+                                <h4>Movie Night</h4>
+                                <ul class="tools">
+                                    <li>JavaScript</li>
+                                    <li>SASS</li>
+                                    <li>HTML5</li>
+                                </ul>
+                                <p class="project-description">
+                                    For all the movie lovers. Pick any genre and the app will provide you a list of movies to choose from. If you have any trouble deciding, this app will also display the top three rated movies for each genre. Created by Huong Mai and Richard Gayle.
+                                </p>
+                            </div>
+                            <div class="button-links">
+                                <a class="more-info" href="https://theeasypoll.netlify.app/" target="_blank">Live</a>
+                                <a class="more-info" href="https://github.com/HongjianHuang/Project_4_voting_booth" target="_blank">GitHub</a>
+                            </div>
                         </div>
-                    </div>
-                </li>
-            </ul>
+                    </li>
+                    <li class="project">
+                        <div class="project-image-container">
+                            <a href="">
+                                <img src="./assets/restaurant.png" alt="An image of a restaurant PSD template converted into a multi-page responsive and accessible website">
+                            </a>
+                        </div>
+                        <div class="project-content-container">
+                            <div class="project-content">
+                                <h4>The Restaurant Mall</h4>
+                                <ul class="tools">
+                                    <li>HTML5</li>
+                                    <li>SASS</li>
+                                    <li>JavaScript</li>
+                                </ul>
+                                <p class="project-description">
+                                    A conversion of a PSD template into a functional multi-page, responsive and accessible website.
+                                </p>
+                            </div>
+                            <div class="button-links">
+                                <a class="more-info" href="https://theeasypoll.netlify.app/" target="_blank">Live</a>
+                                <a class="more-info" href="https://github.com/HongjianHuang/Project_4_voting_booth" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
 
-        <!-- Form Section -->
-        <section  class="contact-section" id="contact">
-            <h3>Contact</h3>
+        <!-- Contact Section -->
+
+        <section class="contact-section" id="contact">
             <div class="contact-text wrapper">
-                <h5>Lets get in touch</h5>
+                <h3>Contact</h3>
                 <p>Feel free to reach out for more information about myself and my work!</p>
             </div>
-            <div class="contact wrapper">
+            <div class="contact-container wrapper">
                 <ul class="contact-links">
                     <li>
                         <a href="https://github.com/r2gayle" target="_blank" aria-label="GitHub">
@@ -251,9 +258,13 @@
                     </li>
                     <li>
                         <a href="https://www.linkedin.com/in/richardcgayle/" target="_blank" aria-label="Linkedin">
-                            <i class="fab fa-linkedin-in"
-                        aria-hidden="true"></i>
+                            <i class="fab fa-linkedin" aria-hidden="true"></i>
                         </a>          
+                    </li>
+                    <li>
+                        <a href="mailto:richardcgayle@gmail.com" target="_blank" aria-label="Email">
+                            <i class="fas fa-envelope" aria-hidden="true"></i>
+                        </a>
                     </li>
                     <li>
                         <a href="https://twitter.com/richard_codes" target="_blank" aria-label="Twitter">
@@ -282,11 +293,6 @@
                     <button type="submit">send</button>
                 </form>
             </div>
-            <div class="scroll-up">
-                <a href="#home">
-                    <i class="fas fa-sort-up" aria-hidden="true"></i>
-                </a>
-            </div>
         </section>
     </main>
 
@@ -295,6 +301,6 @@
         <p>Copyright © Richard Gayle 2021</p>
     </footer>
     <!-- JS -->
-    <script src="app.js"></script>
+    <script src="./app.js"></script>
 </body>
 </html>
