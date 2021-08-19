@@ -507,6 +507,12 @@ footer p {
 
 /* Media */
 
+@media(max-width: 1300px) {
+    .skills-section, header, .contact-section {
+        background-attachment: scroll;
+    }
+}
+
 @media(max-width: 930px) {
     form {
         width: 70%;
@@ -680,10 +686,6 @@ footer p {
 
 
 @media(max-width: 414px) {
-    .skills-section, header, .contact-section {
-        background-attachment: scroll;
-    }
-
     h1 {
         font-size: calc(1.9rem + 1.6vw);
     }
@@ -725,7 +727,7 @@ footer p {
     h1 {
         font-size: calc(1.7rem + 1.6vw);
     }
-    
+
     .standard-ul {
         clip-path: circle(100px at 110% -17%);
         -webkit-clip-path: circle(100px at 110% -17%);
