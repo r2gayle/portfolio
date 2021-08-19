@@ -222,6 +222,21 @@ header {
 	}
 }
 
+@keyframes animateDown{
+	
+	0%{
+		opacity: 0;
+		transform: rotate(45deg) translate(20px, 20px);
+	}
+	50%{
+		opacity: 1;
+	}
+	100%{
+		opacity: 0;
+		transform: rotate(45deg) translate(-20px, -20px);
+	}
+}
+
 /* About Section */
 
 .about-text p {
